@@ -34,7 +34,7 @@ for i in os.listdir(INPUT_DIR):
         # printing interesting information
         print(f'Data in the QR code: {data} from the {i} picture')
         print(f'The rectangle position: {rectangle}')
-        print(f'Coordinates of each corner of the polygon: {polygon[0]}')
+        print(f'Coordinates of each corner of the polygon: {polygon}')
 
         # adding boundary box around the QR code area
         cv2.rectangle(img, (rectangle.left, rectangle.top),
